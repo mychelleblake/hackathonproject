@@ -28,7 +28,7 @@ var GameList = new Games();
 
 GameList.fetch({
 	success: function(resp) {
-		var random = getRandomInt(0, resp.length);
+		var random = getRandomInt(0, 9);
 		var dataObj = resp.toJSON().reduce(function(a,b){
 			if (parseInt(a.number, 10) === random) {
 				return a;

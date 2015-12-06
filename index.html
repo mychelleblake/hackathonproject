@@ -4,11 +4,14 @@
 	<meta charset="UTF-8">
 	<title>Dog Training Game Idea Generator</title>
 	  <link href="main.css" rel="stylesheet">
-	  <link href='https://fonts.googleapis.com/css?family=Short+Stack' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> 
 </head>
 <body>
 <div id= "header"><h2>Choose a Dog Training Game</h2></div>
 <div id= "container">
+	<div id="button">
+	<button id="chooseGameButton" type="submit">Choose A Game</button>
+	</div>
 
 <div id="gameInject"></div>
 
@@ -24,12 +27,35 @@
 			<div class="videos" id="video">
 				<iframe src="{{URL}}" width="600" height="338" frameborder="0" allowfullscreen></iframe>
 			</div>
-	</div>
 {{/data}}
+<div id="disqus_thread">
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//traininggames.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
 </script>
-	<div id="button">
-	<button id="chooseGameButton" type="submit">Choose Game</button>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript></div>
+
+
 	</div>
+
+</script>
+	
 </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
